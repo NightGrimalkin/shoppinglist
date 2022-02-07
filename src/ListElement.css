@@ -1,5 +1,5 @@
 .listElement{
-    background-color: blue;
+    background-color: #5a189a;
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -7,8 +7,8 @@
     height: 1%;
 }
 .listElement *{
-    background-color: rgb(85, 124, 158);
-    color: #000;
+    background-color: #121212;
+    color: #c77dff;
     height: 1%;
 } 
 .listElement p{

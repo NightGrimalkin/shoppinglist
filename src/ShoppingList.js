@@ -119,7 +119,7 @@ function ShoppingList() {
       <button onClick={addToList}>Dodaj</button>
       <button onClick={sortList}>Sortuj</button>
       <div>{returnList()}</div>
-      <p>Podsumowanie: {sum}zł</p>
+      <h3>Podsumowanie: {sum}zł</h3>
     </div>
   );
 }
