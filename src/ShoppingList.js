@@ -49,6 +49,15 @@ function ShoppingList() {
       listPriceInput: "",
     });
   }
+  function sortList(){
+    let tempNotes =notes;
+    tempNotes.sort(function(a, b){
+      if(a.listElementInput < b.listElementInput) { return -1; }
+      if(a.listElementInput > b.listElementInput) { return 1; }
+      return 0;
+  })
+  setNotes([...tempNotes]);
+  } 
 
   function returnList() {
     const listToReturn = notes.map((value, index) => {
@@ -86,6 +95,7 @@ function ShoppingList() {
         value={tempNotes.listPriceInput}
       />
       <button onClick={addToList}>Dodaj</button>
+      <button onClick={sortList}>Sortuj</button>
       <div>{returnList()}</div>
     </div>
   );
